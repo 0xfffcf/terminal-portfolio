@@ -1,6 +1,7 @@
 import { Box } from '@chakra-ui/react'
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import MenuBar from '../components/menuBar'
 import Terminal from '../components/terminal'
 
 const Home: NextPage = () => {
@@ -14,6 +15,7 @@ const Home: NextPage = () => {
         <meta name="author" content="0xfffcf"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       </Head>
+      <MenuBar/>
       <Terminal/>
     </Box>
   )
