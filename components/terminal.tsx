@@ -1,11 +1,14 @@
 import { Box, Center, Text } from '@chakra-ui/react'
+import { motion } from 'framer-motion';
+import { fadeIn } from '../utils/variants';
+
 
 import Input from './input';
 
 const Terminal: React.FC = () => {
   return (
-    <Box>
-      <Box width={'100wv'} height={'100vh'}>
+    <Box as={motion.div} variants={fadeIn} initial="initial" animate="animate">
+      <Box width={'100%'} height={'100vh'}>
         <Box
           m={'auto'}
           position={'relative'}
@@ -21,7 +24,7 @@ const Terminal: React.FC = () => {
           borderRadius={'10px'}
         >
           <Center fontSize={'0.84rem'} lineHeight={'2.5rem'}>
-            debian@0xf: ~
+            debian@username: ~
           </Center>
           
           <Box ml={'1rem'}>
