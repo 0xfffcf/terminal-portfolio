@@ -41,11 +41,19 @@ const Input: React.FC = () => {
             case 'clear':
                 setCommandResult([{ input: '', response: ''}]);
                 break;
+            case 'experience':
+                setCommandResult(commands => {
+                    return [...commands, {
+                        input: command,
+                        response: 'Availables Commands: ["Experience", "Market", "Skills", "Social"]' 
+                    }]
+                });
+                break
             case 'help':
                 setCommandResult(commands => {
                     return [...commands, {
                         input: command,
-                        response: 'out' 
+                        response: 'Currently working as a Full-Stack with Angular - GraphQL - SQL/Mongo' 
                     }]
                 });
                 break;
