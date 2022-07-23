@@ -6,7 +6,7 @@ import Terminal from '../components/terminal'
 
 const Home: NextPage = () => {
   return (
-    <Box>
+    <Box h={'100vh'}>
       <Head>
         <title>0xfffcf</title>
         <meta charSet='utf-8'/>
