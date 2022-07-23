@@ -41,7 +41,7 @@ const Input: React.FC = () => {
             case 'clear':
                 setCommandResult([{ input: '', response: ''}]);
                 break;
-            case 'experience':
+            case 'help':
                 setCommandResult(commands => {
                     return [...commands, {
                         input: command,
@@ -49,7 +49,7 @@ const Input: React.FC = () => {
                     }]
                 });
                 break
-            case 'help':
+            case 'experience':
                 setCommandResult(commands => {
                     return [...commands, {
                         input: command,
