@@ -1,15 +1,17 @@
-import { Box } from "@chakra-ui/react"
-
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMoon } from "@fortawesome/free-regular-svg-icons";
+import { Box, Icon, IconButton, useColorMode } from "@chakra-ui/react"
+import { SunIcon, MoonIcon } from '@chakra-ui/icons'
 
 import styles from '../styles/MenuBar.module.scss';
 
 const MenuBar: React.FC = () => {
+    const {colorMode, toggleColorMode} = useColorMode();
     return (
-        <Box pos={'absolute'} w={'100vw'} h={'5em'}>
-            <Box pt={'2em'} pl={'2em'}>
-                <FontAwesomeIcon icon={faMoon} size='2x' className={styles.icon}/>
+        <Box h={'5em'} pos={'absolute'}>
+            <Box pt={'1.5em'} pl={'1.5em'}>
+                <IconButton 
+                aria-label="" 
+                onClick={toggleColorMode} 
+                icon={colorMode === "dark" ? <SunIcon/> : <MoonIcon/>}/>
             </Box>
         </Box>
     )
