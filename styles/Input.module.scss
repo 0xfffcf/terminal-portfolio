@@ -1,28 +1,28 @@
 .userInput {
-    background-color: transparent;
-    outline: transparent;
-    caret-color: transparent;
+  background-color: transparent;
+  outline: transparent;
+  caret-color: transparent;
 }
 
 .blinker {
-    position: relative;
-    top: -7px;
+  position: relative;
+  top: -6px;
 
-    &:after {
-        position: relative;
-        content: "";
-        background-color: rgb(159, 162, 171);
-    
-        display: inline-block;
-        top: 3px;
-        height: 20px;
-        width: 2px;
-        animation: blink 1s step-start 0s infinite;
-    }
+  &:after {
+    position: relative;
+    content: '';
+    background-color: rgb(159, 162, 171);
+
+    display: inline-block;
+    top: 3px;
+    height: 20px;
+    width: 2px;
+    animation: blink 1s step-start 0s infinite;
+  }
 }
 
 @keyframes blink {
-    50% {
-      opacity: 0;
-    }
+  50% {
+    opacity: 0;
   }
+}
