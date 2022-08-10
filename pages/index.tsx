@@ -3,12 +3,11 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Terminal from 'features/terminal';
 import MenuBar from '@/features/menuBar';
-import { motion } from 'framer-motion';
 import Footer from '@/features/footer';
 
 const Home: NextPage = () => {
   return (
-    <Box h={'100vh'}>
+    <Box h='100vh'>
       <Head>
         <title>0xfffcf</title>
         <meta charSet='utf-8' />
