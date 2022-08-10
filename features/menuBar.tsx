@@ -1,8 +1,19 @@
-import { Avatar, Box, Flex, IconButton, useColorMode } from '@chakra-ui/react';
+import { Avatar, Box, Flex } from '@chakra-ui/react';
+
+import { motion } from 'framer-motion';
+import { fadeIn } from 'utils/variants';
 
 const MenuBar: React.FC = () => {
   return (
-    <Box h='5em' w='100%' pos='absolute'>
+    <Box
+      h='5em'
+      w='100%'
+      pos='absolute'
+      as={motion.div}
+      variants={fadeIn}
+      initial='initial'
+      animate='animate'
+    >
       <Flex>
         <Box ml='auto' pt='1.5em' pr='1.5em'>
           <a href='https://github.com/0xfffcf'>
