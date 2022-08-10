@@ -1,0 +1,7 @@
+{
+  "name": "iwashere",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
