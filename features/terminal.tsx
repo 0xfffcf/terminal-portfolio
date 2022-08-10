@@ -1,4 +1,4 @@
-import { Box, Center, Text } from '@chakra-ui/react';
+import { Box, Center, Text, useMediaQuery } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import { fadeIn } from 'utils/variants';
 
@@ -21,7 +21,7 @@ const Terminal: React.FC = () => {
         bgColor='blackAlpha.900'
         maxW='1044px'
         minW='300px'
-        minH='340px'
+        minH={['300px', null, null, '340px']}
         maxH='500px'
         boxShadow='dark-lg'
         borderRadius='10px'
