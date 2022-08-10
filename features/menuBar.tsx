@@ -1,17 +1,21 @@
-import { Box, IconButton, useColorMode } from '@chakra-ui/react';
-import { SunIcon, MoonIcon } from '@chakra-ui/icons';
+import { Avatar, Box, Flex, IconButton, useColorMode } from '@chakra-ui/react';
 
 const MenuBar: React.FC = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
   return (
-    <Box h={'5em'} pos={'absolute'}>
-      <Box pt={'1.5em'} pl={'1.5em'}>
-        <IconButton
-          aria-label='themeChanger'
-          onClick={toggleColorMode}
-          icon={colorMode === 'dark' ? <SunIcon /> : <MoonIcon />}
-        />
-      </Box>
+    <Box h='5em' w='100%' pos='absolute'>
+      <Flex>
+        <Box ml='auto' pt='1.5em' pr='1.5em'>
+          <a href='https://github.com/0xfffcf'>
+            <Avatar
+              name='0xfffcf'
+              src='https://avatars.githubusercontent.com/u/101296800?v=4'
+              boxSizing='content-box'
+              border='1.7px solid #4299E1'
+              shadow='md'
+            />
+          </a>
+        </Box>
+      </Flex>
     </Box>
   );
 };

@@ -2,6 +2,7 @@ import { Box, Center, Flex, Text } from '@chakra-ui/react';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Terminal from 'features/terminal';
+import MenuBar from '@/features/menuBar';
 
 const Home: NextPage = () => {
   return (
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
         <meta name='author' content='0xfffcf' />
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       </Head>
+      <MenuBar />
       <Terminal />
       <Flex justifyContent='center'>
         <Text pos='absolute' bottom='5' m='auto'>
