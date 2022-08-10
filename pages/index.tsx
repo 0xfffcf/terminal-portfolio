@@ -3,6 +3,8 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import Terminal from 'features/terminal';
 import MenuBar from '@/features/menuBar';
+import { motion } from 'framer-motion';
+import Footer from '@/features/footer';
 
 const Home: NextPage = () => {
   return (
@@ -23,14 +25,7 @@ const Home: NextPage = () => {
       </Head>
       <MenuBar />
       <Terminal />
-      <Flex justifyContent='center'>
-        <Text pos='absolute' bottom='5' m='auto'>
-          Made with ❤️ by{' '}
-          <Text as='span' color='blue.400'>
-            <a href='https://github.com/0xfffcf'>0xfffcf</a>
-          </Text>
-        </Text>
-      </Flex>
+      <Footer />
     </Box>
   );
 };
