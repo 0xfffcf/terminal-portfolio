@@ -5,7 +5,9 @@ interface IResponse {
 }
 
 const Response: Function = ({ text }: IResponse) => {
-  const paragraph = text.split('\n').map((str) => <Box>{str}</Box>);
+  const paragraph = text
+    .split('\n')
+    .map((str) => <Box dangerouslySetInnerHTML={{ __html: str }}></Box>);
 
   return paragraph;
 };
