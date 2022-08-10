@@ -1,6 +1,8 @@
 import { Box, Center, Text } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import { fadeIn } from 'utils/variants';
+import Blue from './color/blue';
+import Red from './color/red';
 
 import Input from './input';
 
@@ -19,8 +21,10 @@ const Terminal: React.FC = () => {
         maxW='1044px'
         minW='300px'
         minH='340px'
+        maxH='500px'
         boxShadow='dark-lg'
         borderRadius='10px'
+        overflow='auto'
       >
         <Center fontSize='0.84rem' lineHeight='2.5rem'>
           <Text as='span' color='red.400'>
@@ -29,7 +33,9 @@ const Terminal: React.FC = () => {
           <Text as='span' color='blue.400'>
             @
           </Text>
-          username:&nbsp;
+          0xfffcf
+          <Red text=':' />
+          &nbsp;
           <Text as='span' color='blue.400'>
             ~
           </Text>
@@ -37,29 +43,10 @@ const Terminal: React.FC = () => {
 
         <Box ml='1rem'>
           <Text>
-            <Text as='span' color='red.400'>
-              Welcome
-            </Text>{' '}
-            to my{' '}
-            <Text as='span' color={'blue.400'}>
-              portfolio
-            </Text>
-            !{' '}
-            <Text as='span' color='red.400'>
-              -
-            </Text>{' '}
-            Type{' '}
-            <Text as='span' color={'blue.400'}>
-              help
-            </Text>{' '}
-            to see a list of{' '}
-            <Text as='span' color='red.400'>
-              supported
-            </Text>{' '}
-            commands
-            <Text as='span' color='blue.400'>
-              .
-            </Text>
+            <Red text='Welcome' /> to my <Blue text='portfolio' />
+            ! <Red text='-' /> Type <Blue text='help' /> to see a list of{' '}
+            <Red text='supported' /> commands
+            <Blue text='.' />
           </Text>
           <Input />
         </Box>
