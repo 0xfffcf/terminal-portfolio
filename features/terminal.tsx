@@ -1,6 +1,7 @@
 import { Box, Center, Text } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import { fadeIn } from 'utils/variants';
+
 import Blue from './color/blue';
 import Red from './color/red';
 
