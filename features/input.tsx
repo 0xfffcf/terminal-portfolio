@@ -7,6 +7,7 @@ import styles from '@/styles/Input.module.scss';
 import { handleOnBlur } from 'utils/handleOnBlur';
 import { useCallback, useState } from 'react';
 import Response from './response';
+import Blue from './color/blue';
 
 const Input: React.FC = () => {
   const [inputSize, setInputSize] = useState(1);
@@ -55,7 +56,56 @@ const Input: React.FC = () => {
               {
                 input: command,
                 response:
-                  'Availables Commands: ["Experience", "Market", "Skills", "Social"]',
+                  '<p style="color: var(--chakra-colors-blue-400); display: inline;">' +
+                  'Availables ' +
+                  '</p>' +
+                  'Commands' +
+                  '<p style="color: var(--chakra-colors-red-400); display: inline;">' +
+                  ': ' +
+                  '</p>' +
+                  '<p style="color: var(--chakra-colors-red-400); display: inline;">' +
+                  '[' +
+                  '</p>' +
+                  '<p style="color: var(--chakra-colors-blue-400); display: inline;">' +
+                  '"' +
+                  '</p>' +
+                  'Clear' +
+                  '<p style="color: var(--chakra-colors-blue-400); display: inline;">' +
+                  '"' +
+                  '</p>' +
+                  '<p style="color: var(--chakra-colors-red-400); display: inline;">' +
+                  ', ' +
+                  '</p>' +
+                  '<p style="color: var(--chakra-colors-blue-400); display: inline;">' +
+                  '"' +
+                  '</p>' +
+                  'Experience' +
+                  '<p style="color: var(--chakra-colors-blue-400); display: inline;">' +
+                  '"' +
+                  '</p>' +
+                  '<p style="color: var(--chakra-colors-red-400); display: inline;">' +
+                  ', ' +
+                  '</p>' +
+                  '<p style="color: var(--chakra-colors-blue-400); display: inline;">' +
+                  '"' +
+                  '</p>' +
+                  'Market' +
+                  '<p style="color: var(--chakra-colors-blue-400); display: inline;">' +
+                  '"' +
+                  '</p>' +
+                  '<p style="color: var(--chakra-colors-red-400); display: inline;">' +
+                  ', ' +
+                  '</p>' +
+                  '<p style="color: var(--chakra-colors-blue-400); display: inline;">' +
+                  '"' +
+                  '</p>' +
+                  'Skills' +
+                  '<p style="color: var(--chakra-colors-blue-400); display: inline;">' +
+                  '"' +
+                  '</p>' +
+                  '<p style="color: var(--chakra-colors-red-400); display: inline;">' +
+                  ']' +
+                  '</p>',
               },
             ];
           });
@@ -67,7 +117,70 @@ const Input: React.FC = () => {
               {
                 input: command,
                 response:
-                  'Currently working as a Full-Stack with Angular - GraphQL - SQL/Mongo',
+                  'Currently ' +
+                  '<p style="color: var(--chakra-colors-blue-400); display: inline;">' +
+                  'working ' +
+                  '</p>' +
+                  'as a ' +
+                  '<p style="color: var(--chakra-colors-red-400); display: inline;">' +
+                  'Full' +
+                  '</p>' +
+                  '-' +
+                  '<p style="color: var(--chakra-colors-blue-400); display: inline;">' +
+                  'Stack ' +
+                  '</p>' +
+                  'with ' +
+                  '<p style="color: var(--chakra-colors-red-400); display: inline;">' +
+                  'Angular ' +
+                  '</p>' +
+                  '<p style="color: var(--chakra-colors-blue-400); display: inline;">' +
+                  '- ' +
+                  '</p>' +
+                  '<p style="color: var(--chakra-colors-red-400); display: inline;">' +
+                  'GraphQL' +
+                  '</p>' +
+                  '<p style="color: var(--chakra-colors-blue-400); display: inline;">' +
+                  ' - ' +
+                  '</p>' +
+                  '<p style="color: var(--chakra-colors-red-400); display: inline;">' +
+                  'SQL' +
+                  '<p style="color: var(--chakra-colors-blue-400); display: inline;">' +
+                  '/' +
+                  '</p>' +
+                  '<p style="color: var(--chakra-colors-red-400); display: inline;">' +
+                  'Mongo' +
+                  '</p>',
+              },
+            ];
+          });
+          break;
+        case 'market':
+          setCommandResult((commands) => {
+            return [
+              ...commands,
+              {
+                input: command,
+                response:
+                  'Contact' +
+                  '<p style="color: var(--chakra-colors-red-400); display: inline;">' +
+                  ' me' +
+                  '</p>' +
+                  ' if you need a ' +
+                  '<p style="color: var(--chakra-colors-blue-400); display: inline;">' +
+                  'website' +
+                  '</p>' +
+                  '. Create a pull request to my <a href="https://github.com/0xfffcf/0xfffcf.io">' +
+                  '<p style="color: var(--chakra-colors-red-400); display: inline;">' +
+                  'repo.' +
+                  '</p>' +
+                  '<p style="color: var(--chakra-colors-blue-400); display: inline;">' +
+                  ' (' +
+                  '</p>' +
+                  'Click Here' +
+                  '<p style="color: var(--chakra-colors-blue-400); display: inline;">' +
+                  ')' +
+                  '</p>' +
+                  '</a>',
               },
             ];
           });
@@ -78,9 +191,46 @@ const Input: React.FC = () => {
               ...commands,
               {
                 input: command,
-                response: `Languages: HTML, CSS, JS, C/C++, Python, Golang, Bash, Java, SQL...\n
-                  Framework: Angular, NextJS, React, ChakraUI, Tailwindcss, Graphql, Express...\n
-                  Technologies: Git, OpenCV, Ocr...`,
+                response:
+                  '<p style="color: var(--chakra-colors-blue-400); display: inline;">' +
+                  'Languages' +
+                  '</p>' +
+                  ': HTML, CSS, ' +
+                  '<p style="color: var(--chakra-colors-red-400); display: inline;">' +
+                  'JS' +
+                  '</p>' +
+                  ', C/C++, ' +
+                  '<p style="color: var(--chakra-colors-blue-400); display: inline;">' +
+                  'Python, ' +
+                  '</p>' +
+                  'Golang, Bash, ' +
+                  '<p style="color: var(--chakra-colors-red-400); display: inline;">' +
+                  'Java' +
+                  '</p>' +
+                  ', SQL...\n' +
+                  '<p style="color: var(--chakra-colors-blue-400); display: inline;">' +
+                  'Framework' +
+                  '</p>' +
+                  ': ' +
+                  '<p style="color: var(--chakra-colors-red-400); display: inline;">' +
+                  'Angular' +
+                  '</p>' +
+                  ', NextJS, React, ChakraUI, ' +
+                  '<p style="color: var(--chakra-colors-blue-400); display: inline;">' +
+                  'Tailwindcss' +
+                  '</p>' +
+                  ', Graphql, Express' +
+                  '<p style="color: var(--chakra-colors-red-400); display: inline;">' +
+                  '...\n' +
+                  '</p>' +
+                  '<p style="color: var(--chakra-colors-blue-400); display: inline;">' +
+                  'Technologies' +
+                  '</p>' +
+                  ': Git, OpenCV, ' +
+                  '<p style="color: var(--chakra-colors-blue-400); display: inline;">' +
+                  'Ocr' +
+                  '</p>' +
+                  '...',
               },
             ];
           });
@@ -117,9 +267,7 @@ const Input: React.FC = () => {
                 <FontAwesomeIcon icon={faArrowRightLong} />
               </Text>
               &nbsp;
-              <Text as='span' color='blue.400'>
-                ~
-              </Text>
+              <Blue text='~' />
             </Text>
             &nbsp;
           </span>
