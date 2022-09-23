@@ -14,12 +14,6 @@
 
 <br/>
 
-> # Future
-
-* More pages are coming to this website soon!
-
-<br/>
-
 > # Support me.
 
 * Thanks for looking at this repository, if you like to press the ⭐ button!
