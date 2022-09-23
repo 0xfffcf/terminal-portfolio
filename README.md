@@ -1,7 +1,7 @@
 <h1 align="center">0xfffcf.io</h1>
 
 <p align='center'>
-    <b>💖 My Minimalist Portfolio 💙</b>
+    <b>💖 My Old Minimalist Portfolio 💙</b>
 </p>
 
 ----
