@@ -1,4 +1,4 @@
-<h1 align="center">0xfffcf.io</h1>
+<h1 align="center">0xfffcf.xyz</h1>
 
 <p align='center'>
     <b>💖 My Old Minimalist Portfolio 💙</b>
